@@ -10,10 +10,7 @@ function clamp(min: number, max: number) {
   };
 }
 
-export function useFontScale<T extends HTMLElement = HTMLElement>(
-  min = 1,
-  max = 2
-) {
+export function useFontScale<T extends HTMLElement>(min = 1, max = 2) {
   const [scale, setScale] = React.useState(1);
   const ref = React.useRef<T>(null);
 

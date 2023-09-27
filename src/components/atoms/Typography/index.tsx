@@ -1,11 +1,11 @@
-import { styled } from "styled-components";
-import { theme } from "../../../theme";
+import { styled } from 'styled-components';
+import { theme } from '../../../theme';
 
 export interface TypographyProps {
   // Required
-  size: keyof (typeof theme)["fontSizes"];
+  size: keyof (typeof theme)['font']['sizes'];
 }
 
 export const Typography = styled.span<TypographyProps>`
-  font-size: ${({ size }) => theme.fontSizes[size]};
+  font-size: ${({ size }) => theme.font.sizes[size]};
 `;
